@@ -114,8 +114,6 @@ footer a.facebook:before{
 footer a.instagram:before{
   background-position: 0 -48px;
 }
-
-.facebook, .instagram{
-
+ footer a:hover:before {
+  background-color: #00bf8f
 }
-

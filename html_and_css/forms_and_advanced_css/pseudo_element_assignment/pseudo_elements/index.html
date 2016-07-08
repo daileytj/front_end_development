@@ -3,76 +3,7 @@
   <head>
     <title>Adding Pseudo Elements</title>
     <meta charset="UTF-8" />
-    <style>
-      body {
-        margin: 0;
-        font: normal 18px Helvetica, Arial, sans-serif;
-        color: #333333;
-      }
-      h1 {
-        margin-top: 0;
-        font-size: 24px;
-      }
-      h2 {
-        margin-top: 0;
-        font-size: 20px;
-      }
-      ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-      }
-
-      #column {
-        margin: 0 120px 0 160px;
-      }
-
-      header {
-        float: left;
-        width: 160px;
-        height: 100vh;
-        padding: 15px;
-        margin-left: -160px;
-        font-size: 14px;
-        background: #2c3e50;
-        box-sizing: border-box;
-      }
-      header a {
-        text-decoration: none;
-        color: #ecf0f1;
-      }
-      header li {
-        padding-bottom: 15px;
-      }
-
-      main {
-        float: left;
-        width: 100%;
-        padding: 25px;
-        box-sizing: border-box;
-      }
-
-      footer {
-        float: right;
-        width: 120px;
-        height: 100vh;
-        padding: 15px;
-        margin-right: -120px;
-        font-size: 12px;
-        background: #e74c3c;
-        box-sizing: border-box;
-      }
-      footer li {
-        padding-bottom: 10px;
-      }
-      footer a {
-        display: block;
-        padding: 5px;
-        text-decoration: none;
-        color: #2980b9;
-        background: #ffffff;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
     <div id="column">
@@ -80,9 +11,9 @@
         <h1><a href="">My Blog</a></h1>
         <nav>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">My Photos</a></li>
-            <li><a href="">Contact Me</a></li>
+            <li><a class = "home" href="">Home</a></li>
+            <li><a class = "photos" href="">My Photos</a></li>
+            <li><a class = "contact" href="">Contact Me</a></li>
           </ul>
         </nav>
       </header>
@@ -95,9 +26,9 @@
 
       <footer>
         <ul>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Facebook</a></li>
-          <li><a href="">Instagram</a></li>
+          <li><a class = "twitter" href="">Twitter</a></li>
+          <li><a class = "facebook" href="">Facebook</a></li>
+          <li><a class = "instagram" href="">Instagram</a></li>
         </ul>
       </footer>
     </div>

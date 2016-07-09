@@ -1,0 +1,168 @@
+/*----------
+CSS Reset
+----------*/
+
+ul,ol { list-style: none; }
+h1,h2,h3,h4,h5,h6,pre,code { font-size: 1em; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input,dl,dt,dd, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+a img,:link img,:visited img, fieldset { border: none; }
+address { font-style: normal; }
+header, section, article, nav, footer, hgroup, details, summary, figure, main { display: block; }
+mark {
+  color: inherit;
+  background: transparent; }
+abbr { border: none; }
+summary::-webkit-details-marker { display: none; }
+
+/*----------
+Main Content
+----------*/
+
+body{
+	font: normal 20px "Hind", Helvetica, Arial, sans-serif;
+	text-align: center;
+  color: #45494d;
+}
+
+header{
+	background: transparent url("images/bg_body.gif") 0 0 repeat;
+}
+
+header img{
+	display: block;
+	margin: 0 auto;
+	padding: 75px 0;
+}
+
+nav ul{
+	text-align: center;
+}
+
+nav ul li{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 24px;
+	padding: 0 42px;
+}
+
+nav a{
+	color: #cacaca;
+	text-decoration: none;
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+nav a.active{
+	color: #6db9ff;
+}
+
+nav{
+	padding: 25px 0 60px 0;
+}
+
+main{
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 100px 0 0 0;
+  background: #ffffff;
+}
+
+h1{
+	padding-bottom: 40px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+h2{
+	padding-bottom: 20px;
+  font-size: 24px;
+  color: #3e59b2;
+}
+
+article{
+	padding: 0 110px 100px 110px;
+}
+
+main .image_container{
+	padding: 60px 30px 20px 30px;
+}
+
+main .border_bottom{
+	border-bottom: 1px solid #b2b2b2;
+}
+
+main img .article_img{
+	width:100%;
+}
+
+.team_list{
+	padding-bottom: 100px;
+}
+
+.team_list ul{
+	text-align: center;
+}
+
+.team_list li{
+	display: inline-block;
+	padding: 0 32px;
+}
+
+.team_list li a{
+  text-decoration: none;
+}
+
+figcaption{
+  color: #3e59b2;
+}
+
+footer{
+	padding: 75px 0;
+	color: #b2b2b2;
+	background: #e7e7e7;
+}
+
+footer p {
+	text-align: center;
+  padding: 0 0 40px 0;
+}
+
+footer ul{
+	text-align: center;
+}
+
+footer ul li{
+	display: inline-block;
+	padding: 0 62px;
+}
+
+footer li a{
+	display: block;
+	height: 46px;
+	width: 46px; 
+}
+
+footer .social{
+	background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
+}
+
+footer .facebook{
+	background-position: 0 -46px;
+}
+
+footer .email{
+	background-position: 0 -92px;
+}
+
+footer .instagram{
+	background-position: 0 100%;
+}
+
+footer .social:hover{
+	background-color: #45494d;
+	border-radius: 100%
+}

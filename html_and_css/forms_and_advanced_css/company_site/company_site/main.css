@@ -23,17 +23,22 @@ Main Content
 body{
 	font: normal 20px "Hind", Helvetica, Arial, sans-serif;
 	text-align: center;
+	background: #2f2840 url("images/bg_body.gif") 50% 0 repeat;
   color: #45494d;
+  padding: 135px 0 0 0;
 }
 
-header{
-	background: transparent url("images/bg_body.gif") 0 0 repeat;
+header h1{
+	margin: 0 0 15px 0; 
 }
 
-header img{
-	display: block;
-	margin: 0 auto;
-	padding: 75px 0;
+header h1 a{
+	display: inline-block;
+	width: 298px;
+	height:243px;
+	text-indent: -9999px;
+	background: transparent url("images/logo.png") 0 0 no-repeat;
+
 }
 
 nav ul{
@@ -41,10 +46,11 @@ nav ul{
 }
 
 nav ul li{
-	display: inline-block;
+	display: inline;
 	text-decoration: none;
 	font-size: 24px;
 	padding: 0 42px;
+	text-transform: uppercase;
 }
 
 nav a{
@@ -61,7 +67,7 @@ nav a.active{
 }
 
 nav{
-	padding: 25px 0 60px 0;
+	padding: 0 0 60px 0;
 }
 
 main{
@@ -89,14 +95,16 @@ article{
 
 main .image_container{
 	padding: 60px 30px 20px 30px;
+	text-align:center;
 }
 
 main .border_bottom{
 	border-bottom: 1px solid #b2b2b2;
 }
 
-main img .article_img{
+main .article_img{
 	width:100%;
+	height: auto;
 }
 
 .team_list{
@@ -165,4 +173,99 @@ footer .instagram{
 footer .social:hover{
 	background-color: #45494d;
 	border-radius: 100%
+}
+
+/*
+Media Queries
+*/
+
+@media(max-width: 768px){
+	body{ 
+		padding-top: 65px; 
+	}
+	
+	header h1 a{
+		width: 223px;
+		height: 182px;
+		background-size: cover;
+	}
+
+	main{
+		max-width: 650px;
+	}
+ 	
+ 	nav{
+ 		padding-bottom: 20px;
+ 	}
+ 	main{
+ 		padding-top: 70px;
+ 	}
+ 	article{
+	padding: 0 30px 50px 30px;
+}
+ 	article p{
+ 		padding: 0 40px;
+ 		text-align: justify;
+ 	}
+ 	.team_list li{
+ 		width:48%;
+ 		box-sizing: border-box;
+ }
+
+footer{
+	padding: 35px 0;
+}
+ footer ul li{
+		padding: 0 32px;
+	}
+}
+@media(max-width: 480px){
+	body{
+		padding-top: 0;
+		font-size: 16px;
+	}
+	header{
+		padding: 20px 15px;
+	}
+
+	header h1{
+		float: left;
+		margin: 0;
+		padding-top: 15px;
+	}
+
+	header h1 a{
+		width: auto;
+    height: 40px;
+    padding: 10px 0 0 55px;
+    text-indent: 0;
+    font-size: 22px;
+    color: #ffffff;
+    background-position: -20px 0;
+    background-size: 90px auto;
+    text-decoration: none;
+
+	}
+	nav{
+		text-align:right;
+		padding-bottom: 0;
+	}
+
+nav ul{
+	margin: 0;
+	text-align: right;
+}
+	nav ul li{
+		display:block;
+		font-size: 16px;
+		padding: 2px 0;
+	}
+
+	article{
+	padding: 0 15px 30px 15px;
+}
+
+	footer ul li{
+		padding: 0 20px;
+	}
 }

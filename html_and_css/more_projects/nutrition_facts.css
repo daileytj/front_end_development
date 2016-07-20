@@ -1,0 +1,138 @@
+body{
+	font: 28px Helvetica, Arial, sans-serif;
+  background: #ffffff;
+  display: block;
+  margin: 8px;
+}
+
+article{
+	width: 680px;
+  padding: 10px 15px 15px 15px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  display:block;
+}
+
+header{
+	margin-bottom: 10px;
+  border-bottom: 15px solid #000000;
+  display: block;
+}
+
+h1{
+	padding: 0;
+  margin: 0;
+  font-size: 2em;
+  display: block;
+  font-weight: bold;
+}
+
+h2{
+	padding: 10px 0;
+  margin: 5px 0 0 0;
+  font-size: 1em;
+  border-top: 30px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+p{
+	margin:0;
+}
+
+header dl {
+  display: inline-block;
+  width: 50%;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+dl{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header dl + dl {
+  text-align: right;
+  margin-left: -20px;
+}
+
+header dl + dl dt {
+  font-weight: 500;
+}
+
+dt {
+  display: inline;
+  font-weight: 600;
+}
+
+dd {
+  display: inline;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: right;
+}
+
+tbody th {
+  padding: 2px 0;
+  font-weight: normal;
+  text-align: left;
+  border-top: 1px solid #000000;
+}
+
+tr td:last-of-type {
+  font-weight: 600;
+  text-align: right;
+}
+
+
+tbody + tbody tr:first-of-type td {
+  border-top: 20px solid #000000;
+}
+
+tbody td {
+  padding: 2px 0;
+  border-top: 1px solid #000000;
+}
+
+td.indent {
+  width: 1em;
+  border-top: none;
+}
+
+td dt{
+	font-weight: normal;
+}
+
+tfoot td:last-of-type {
+    padding: .5em 0 .5em .7em;
+    font-size: .9em;
+    font-weight: normal;
+    text-align: left;
+    text-indent: -.7em;
+    border-top: 1px solid #000000;
+}
+
+table + table {
+  font-size: .8em;
+}
+
+table:first-of-type{
+	border-bottom: 20px solid #000000;
+}
+
+table:last-of-type tr:first-of-type{
+	border-bottom: 1px solid #000000;
+}
+
+table:last-of-type td {
+    border: none;
+}
+

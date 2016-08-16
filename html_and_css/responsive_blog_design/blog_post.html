@@ -11,8 +11,8 @@
 	<img src="images/main_img.jpg"/>
 	<nav>
 		<ul>
-			<li><a class = "active" href="#">HOME</a></li>
-			<li><a href="#">HTML</a></li>
+			<li><a href="#">HOME</a></li>
+			<li><a class = "active" href="#">HTML</a></li>
 			<li><a href="#">CSS</a></li>
 			<li><a href="#">JAVASCRIPT</a></li>
 			<li><a href="#">ABOUT</a></li>
@@ -23,26 +23,41 @@
 		<div class = "article_container">
 			<article>
 				<header>
-					<h2><a href="blog_post.html">Post Headline</a></h2>
+					<h2><a href="#">Post Headline</a></h2>
 					<p>Written by <a href = "#">Shane Riley</a> on <time datetime="2014-02-15">Feb. 15, 2014</time></p>	
 				</header>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.
 				</p>
 			</article>
-			<article>
+			<article class = "comments">
 				<header>
-					<h2><a href="blog_post.html">Post Headline</a></h2>
-					<p>Written by <a href = "#">Shane Riley</a> on <time datetime="2014-02-15">Feb. 15, 2014</time></p>	
+					<h2>Comments</h2>
+					<img src="images/kevin.png">
+					<h3><a href = "#">KEVIN</a> on <time datetime="2014-02-15">Feb. 15, 2014</time></h3>	
 				</header>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alquip ex ea commodo consequat. Duis aute irure dolor in rprehenderit in voluptate velit esse culpa qui officia deserunt mollit.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 				</p>
 			</article>
-			<div class = "pagination">
-				<a class = "button prev disabled" href="#">Prev</a>
-				<a class = "button next" href="#">Next</a>
-			</div>
+			<article class = "comments">
+				<header>
+					<img src="images/chris.png">
+					<h3><a href = "#">CHRIS</a> on <time datetime="2014-02-15">Feb. 15, 2014</time></h3>	
+				</header>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+				</p>
+			</article>
+			<fieldset>
+			<h2>Post A Comment</h2>
+				<form class = "form" action="" method="post">
+					<input type="text" name="your_name" id ="your_name" placeholder="Enter your name" />
+					<input type="email" name="email" id ="email" placeholder="Enter your email address" />
+					<textarea rows="10" cols="80" placeholder="Enter your comment"></textarea>
+				</form>
+				<input class = "button submit" type="submit" name="submit" value="Submit">
+			</fieldset>
 		</div>
 		<div class = "sidebar">
 			<div class = "categories">

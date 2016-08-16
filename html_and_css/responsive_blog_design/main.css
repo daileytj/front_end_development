@@ -173,7 +173,7 @@ h3{
 input[type="text"], input[type="email"], textarea{
 	border: 1px solid #7e8287;
 	color: #7e8287;
-	border-radius: 2px;
+	border-radius: 3px;
 	margin-bottom: 18px;
 	padding: 4px 0 4px 4px;
 }

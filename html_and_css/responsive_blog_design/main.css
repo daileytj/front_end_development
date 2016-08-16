@@ -47,7 +47,7 @@ nav li a:hover{
 
 h2{
 	font-size: 1.8em;
-	padding-bottom: 32px;
+	padding-bottom: 25px;
 }
 
 h2 a{
@@ -59,11 +59,7 @@ h2 a:hover{
 }
 
 article p:first-of-type{
-	padding-bottom: 45px;
-}
-
-h3{
-	font-size: .8em;
+	padding-bottom: 25px;
 }
 
 a{
@@ -74,13 +70,25 @@ li{
 	list-style: none;
 }
 
+p{
+	line-height: 150%;
+	vertical-align: center;
+}
+
 article header p a{
 	color: #4a9f8f;
 }
 
+article{
+	padding-bottom: 70px;
+}
+
 main{
-	max-width: 1000px;
-	padding: 85px 98px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1050px;
+	padding: 85px 15px;
 }
 
 .button{
@@ -105,6 +113,43 @@ main{
 .disabled{
 	pointer-events: none;
 	cursor: normal;
+}
+
+.article_container{
+	box-sizing: border-box;
+	float:left;
+	width:78%;
+	padding-right: 110px;
+}
+
+.sidebar{
+	box-sizing: border-box;
+	float:right;
+	width: 22%;
+}
+
+.categories, .about{
+	background: #f6f7f8;
+	padding: 38px;
+}
+
+.sidebar p, .sidebar li a{
+	font-size: .7em;
+	color: #7e8287;
+}
+
+.sidebar li a:hover{
+	color:#4a9f8f;
+}
+
+.sidebar li a:before{
+	content:url("images/bullet.png");
+	padding-right: 5px;
+}
+
+h3{
+	font-size: .8em;
+	padding-bottom: 32px;
 }
 
 main:after{

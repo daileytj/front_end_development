@@ -7,13 +7,14 @@ body{
 
 .header{
 	background: #3d3d3d;
+	padding: 140px 0 50px 0;
 }
 
 h1{
 	font-size: 3.4em;
 	color: #ffffff;
 	text-align: center;
-	padding: 140px 0 45px 0;
+	padding: 0px 0 45px 0;
 }
 
 .header img{
@@ -28,7 +29,6 @@ h1{
 
 nav ul{
 	text-align: center;
-	padding-bottom: 50px;
 }
 
 nav li{
@@ -123,18 +123,18 @@ main{
 	box-sizing: border-box;
 	float:left;
 	width:78%;
-	padding-right: 110px;
+	padding-right: 5%;
 }
 
 .sidebar{
 	box-sizing: border-box;
 	float:right;
 	width: 22%;
+	background: #f6f7f8;
 }
 
 .categories, .about{
-	background: #f6f7f8;
-	padding: 38px;
+	padding: 38px 15%;
 }
 
 .sidebar p, .sidebar li a{
@@ -208,5 +208,78 @@ footer p{
 	padding-top: 16px;
 }
 
+@media (max-width: 768px){
+	.header{
+		padding: 50px 0 20px 0;
+	}
 
+	h1{
+		font-size: 2.4em;
+	}
+
+	h2{
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width:600px){
+	main{
+		padding: 0;
+	}
+
+	.article_container{
+		padding: 50px 25px;
+	}
+
+	.article_container, .sidebar{
+		float: none;
+		width: auto;
+	}
+
+	.sidebar .categories,.sidebar .about{
+		box-sizing: border-box;
+		display: inline-block;
+		width: 49%;
+		vertical-align: top;
+		padding: 35px;
+	}
+
+	footer{
+		width: 100%;
+		margin-top: 70px;
+	}
+}
+
+@media (max-width: 480px){
+
+	h1{
+		padding: 0 0 10px 0;
+		margin: 0 0 10px 0;
+	}
+
+	nav li{
+		display: inline-block;
+		width: 49%;
+		padding: 10px 0;
+		box-sizing: border-box;
+	}
+
+	.header img{
+		width:90%;
+		padding: 0 0 10px 0;
+	}
+
+	.sidebar{
+		background: transparent;
+		padding: 0 25px;
+	}
+
+	.sidebar .categories,.sidebar .about{
+		display:block;
+		width:100%;
+		background: #f6f7f8;
+		margin: 0 0 25px 0;
+	}
+
+}
 

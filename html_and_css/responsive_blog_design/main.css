@@ -102,7 +102,27 @@ main{
 	line-height: 25px;
 }
 
-.next, .submit{
+.post_comment{
+	width:140px;
+}
+
+input[type="checkbox"]{
+	display:none;
+}
+
+.comment_form{
+	display:none;
+}
+
+input:checked + .comment_form{
+	display:block;
+}
+
+.comment_form{
+	margin-top: 40px;
+}
+
+.next, .submit, .post_comment{
 	background: #4a9f8f;
 }
 
